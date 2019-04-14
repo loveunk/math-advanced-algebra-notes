@@ -2,11 +2,24 @@
 
 《高等代数》，丘维声，北京大学，视频：共151讲，[B站视频链接](https://www.bilibili.com/video/av39523603)
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
+- [丘维声《高等代数》学习笔记](#丘维声高等代数学习笔记)
+	- [前言](#前言)
+	- [第一章 线性方程组的解法](#第一章-线性方程组的解法)
+		- [1. .1 解线性方程组的矩阵消元法](#1-1-解线性方程组的矩阵消元法)
+			- [加减消元法](#加减消元法)
+			- [矩阵的初等行变化](#矩阵的初等行变化)
+			- [在有理数集内解线性方程组](#在有理数集内解线性方程组)
+		- [1.2 线性方程组解的情况及其判别情况](#12-线性方程组解的情况及其判别情况)
+		- [1.3 数域](#13-数域)
+			- [习题1.3 思路](#习题13-思路)
+
+<!-- /TOC -->
 
 ## 前言
 
-（视频1、2）
+> 视频1、2
 
 * n元线性方程组和其解法
 * 矩阵的定义（由n元线性方程组的系数得到）
@@ -52,9 +65,9 @@
 
 ## 第一章 线性方程组的解法
 
-### 1. 解线性方程组的矩阵消元法
+### 1. .1 解线性方程组的矩阵消元法
 
-> （视频3、4、5）
+> 视频3、4、5
 
 #### 加减消元法
 
@@ -97,24 +110,24 @@
   * 若阶梯形矩阵的非零行的数目 _r = n_ （未知量数目），那么方程有唯一解
   * 如 _r < n_，那么方程有无穷多个解。
 
-### 线性方程组解的情况及其判别情况
+### 1.2 线性方程组解的情况及其判别情况
 
-> 视频（5、6）
+> 视频5、6
 
 证明：n元线形方程组的增广矩阵经过初等行变换成阶梯矩阵有 _r_ 个非零行，显然有 _n + 1_ 列。
 
 * 情况1： *"0 = d"*，无解
 * 情况2： 不出现*"0 = d"*
-  * 由于 _J_ 的第 _r_ 个主元 _b<sub>rt</sub>_ 不能位于第 _n+1_ 列，因此 _t ≤ n_ 
-  * 因为只能位于对角线的右上方，所以有 _t ≥ r_ 
+  * 由于 _J_ 的第 _r_ 个主元 _b<sub>rt</sub>_ 不能位于第 _n+1_ 列，因此 _t ≤ n_
+  * 因为只能位于对角线的右上方，所以有 _t ≥ r_
   * 情况 2.1：_r = n_
     * _J<sub>1</sub>_ 有n个主元，最后一列的 _(C<sub>1</sub>, C<sub>2</sub>, ..., C<sub>n</sub>)_ 是方程唯一解
   * 情况 2.2：_r < n_
     * 有 _n - r_个自由未知量
 
-#### 数域
+### 1.3 数域
 
-> 视频（7）
+> 视频7
 
 定义1：复数集的一个非空子集K，如果满足：
 
@@ -134,8 +147,8 @@
 
 对于例子：
 
--  _a<sub>11</sub>x1 + a<sub>12</sub>x<sub>2</sub> = b<sub>1</sub>_ 
-- _a<sub>21</sub>x1 + a<sub>22</sub>x<sub>2</sub> = b<sub>2</sub>_ 
+-  _a<sub>11</sub>x1 + a<sub>12</sub>x<sub>2</sub> = b<sub>1</sub>_
+- _a<sub>21</sub>x1 + a<sub>22</sub>x<sub>2</sub> = b<sub>2</sub>_
 
 其增广矩阵转化为阶梯矩阵后可得
 
@@ -150,3 +163,27 @@
 
 表达式_a<sub>11</sub>a<sub>22</sub> - a<sub>21</sub>a<sub>12</sub> ≠ 0_ 用  _|A|_ 来表示，称为**行列式**，这里是**二阶行列式**
 
+#### 习题1.3 思路
+
+1. 令 *Q(i) = {a + bi | a, b ∈ Q}*, 证明 *Q(i)* 是一个数域
+
+证明思路：
+
+* 0 = 0 + 0i ∈ Q(i), 1 = 1 + 0 i ∈ Q(i)
+* α = a + bi, β = c + di
+  - α ± β = (a ± c) + (b ± d)i ∈ Q(i)
+  - αβ = (ac - bd) + (ad + bc)i ∈ Q(i)
+  - β ≠ 0，则c、d不全为0，则<img src="https://latex.codecogs.com/gif.latex?\inline&space;\frac{\alpha}{\beta}&space;=&space;\frac{a&plus;bi}{c&plus;di}&space;=&space;\frac{(a&plus;bi)(c-di)}{(c&plus;di)(c-di)}=\frac{ac&plus;bd}{c^2&plus;d^2}&plus;\frac{(bc-ad)}{c^2&plus;d^2}i&space;\in&space;Q(i)" title="\frac{\alpha}{\beta} = \frac{a+bi}{c+di} = \frac{(a+bi)(c-di)}{(c+di)(c-di)}=\frac{ac+bd}{c^2+d^2}+\frac{(bc-ad)}{c^2+d^2}i \in Q(i)" />
+
+2. 令 <img src="https://latex.codecogs.com/gif.latex?F=\{\frac{a_0&plus;a_1e&plus;\cdots&plus;a_ne^n}{b_0&plus;b_1e&plus;\cdots&plus;b_ne^n}" title="F=\{\frac{a_0+a_1e+\cdots+a_ne^n}{b_0+b_1e+\cdots+b_ne^n}" /> n、m为任意非负整数，a<sub>i</sub>，b<sub>i</sub> 数域 Z，0 ≤ i ≤ n, 0 ≤ j ≤ m。证明F是一个数域，其中e是自然对数的底。
+
+证明思路：
+
+* 对于 0、1∈ F的思路同上题目
+* 对于F中的两个数 α、β
+  * 令<img src="https://latex.codecogs.com/gif.latex?\alpha=\frac{a_0&plus;a_1e&plus;\cdots&plus;a_{n_\alpha}e^{n_\alpha}}{b_0&plus;b_1e&plus;\cdots&plus;b_{n_\alpha}e^n_{n_\alpha}},&space;\beta=\frac{a_0&plus;a_1e&plus;\cdots&plus;a_{n_\beta}e^{n_\beta}}{b_0&plus;b_1e&plus;\cdots&plus;b_{n_\beta}e^n_{n_\beta}}" title="\alpha=\frac{a_0+a_1e+\cdots+a_{n_\alpha}e^{n_\alpha}}{b_0+b_1e+\cdots+b_{n_\alpha}e^n_{n_\alpha}}, \beta=\frac{a_0+a_1e+\cdots+a_{n_\beta}e^{n_\beta}}{b_0+b_1e+\cdots+b_{n_\beta}e^n_{n_\beta}}" />
+  * 则 <img src="https://latex.codecogs.com/gif.latex?\alpha\beta=\frac{a_0^2&plus;2a_0a_1e&plus;\cdots&plus;a_{n_\alpha}a_{n_\beta}e^{n_\alpha&plus;n_\beta}}{b_0^2&plus;2b_0b_1e&plus;\cdots&plus;b_{n_\alpha}b_{n_\beta}e^n_{n_\alpha&plus;n_\beta}}" title="\alpha\beta=\frac{a_0^2+2a_0a_1e+\cdots+a_{n_\alpha}a_{n_\beta}e^{n_\alpha+n_\beta}}{b_0^2+2b_0b_1e+\cdots+b_{n_\alpha}b_{n_\beta}e^n_{n_\alpha+n_\beta}}" />，所以 αβ ∈ F
+  * 同样的思路 α ± β ∈ F，<sup>α</sup>/<sub>β</sub> ∈ F
+
+
+[回到顶部](#丘维声高等代数学习笔记)
