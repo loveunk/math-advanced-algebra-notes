@@ -185,5 +185,44 @@
   * 则 <img src="https://latex.codecogs.com/gif.latex?\alpha\beta=\frac{a_0^2&plus;2a_0a_1e&plus;\cdots&plus;a_{n_\alpha}a_{n_\beta}e^{n_\alpha&plus;n_\beta}}{b_0^2&plus;2b_0b_1e&plus;\cdots&plus;b_{n_\alpha}b_{n_\beta}e^n_{n_\alpha&plus;n_\beta}}" title="\alpha\beta=\frac{a_0^2+2a_0a_1e+\cdots+a_{n_\alpha}a_{n_\beta}e^{n_\alpha+n_\beta}}{b_0^2+2b_0b_1e+\cdots+b_{n_\alpha}b_{n_\beta}e^n_{n_\alpha+n_\beta}}" />，所以 αβ ∈ F
   * 同样的思路 α ± β ∈ F，<sup>α</sup>/<sub>β</sub> ∈ F
 
+## 第二章 行列式
+
+先研究属于 _K_ 上二元一次方程组，例子：
+
+- _a<sub>11</sub>x1 + a<sub>12</sub>x<sub>2</sub> = b<sub>1</sub>_
+- _a<sub>21</sub>x1 + a<sub>22</sub>x<sub>2</sub> = b<sub>2</sub>_
+
+在 1.3节中讨论过 当 _a<sub>11</sub>a<sub>22</sub> - a<sub>21</sub>a<sub>12</sub> ≠ 0_时方程有唯一解；_a<sub>11</sub>a<sub>22</sub> - a<sub>21</sub>a<sub>12</sub> = 0_是有无穷多个解，为了方便记忆，把表达式 _a<sub>11</sub>a<sub>22</sub> - a<sub>21</sub>a<sub>12</sub>_写作：
+
+<p align="center">
+<img src="https://latex.codecogs.com/gif.latex?\left|\begin{array}{ll}{a_{11}}&space;&&space;{a_{12}}&space;\\&space;{a_{21}}&space;&&space;{a_{22}}\end{array}\right|=a_{11}a_{22}-a_{12}a_{21}" title="\left|\begin{array}{ll}{a_{11}} & {a_{12}} \\ {a_{21}} & {a_{22}}\end{array}\right|=a_{11}a_{22}-a_{12}a_{21}" />
+</p>
+
+这是**2阶行列式**。把系数矩阵记作_A_，那么它对应的行列式记作 _|A|_ 或 det(A)。
+
+**数域 _K_ 上的系数矩阵 _A_ 有唯一解 <==> _|A| ≠ 0_**
+
+### 2.1 n元排列
+
+_**n_元排列**：_1, 2, ..., n_ 的一个全排列。排列个数有 _n!_ 个。
+
+**排列方法**：
+
+1. **顺序**：数字从小到大排列（对 a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>，任取一对数_a<sub>i</sub>a<sub>j</sub>_，如果_a<sub>i</sub><a<sub>j</sub>_，则称这一对数构成一个顺序
+2. **逆序**：数字从大到小排列（对 a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>，任取一对数_a<sub>i</sub>a<sub>j</sub>_，如果_a<sub>i</sub>>a<sub>j</sub>_，则称这一对数构成一个逆序
+
+**逆序数**：一个 _n_ 元排列中逆序的总数称为**逆序数**，记作_**τ(a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>)**_。
+
+* 例如_τ(2431) = 2_，因为有24、31这两个逆序数对。 
+
+**偶（奇）排列：**逆序数个数为偶（奇）数，那么这个排列称为**偶（奇）排列**。
+
+**对换：**一个排列里的两个数字互换位置，称为一次**对换**。
+
+**定理1：对换会改变数列奇偶性。**
+
+**定理2：任一n元排列与排列123...n可经过一系列对换互变，并且所做对换的次数与这个n元排列有相同的奇偶性。**
+
+
 
 [回到顶部](#丘维声高等代数学习笔记)
