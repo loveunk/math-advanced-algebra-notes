@@ -152,9 +152,10 @@
 
 其增广矩阵转化为阶梯矩阵后可得
 
-<p align="center">
-<img src="https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;a_{11}&space;&&space;a_{12}&space;&&space;b_1\\&space;0&space;&&space;a_{22}&space;-&space;\frac{a_{21}}{a_{11}}a_{12}&space;&&space;b_2&space;-&space;\frac{a_{21}}{a_{11}}b_1&space;\end{pmatrix}" title="\begin{pmatrix} a_{11} & a_{12} & b_1\\ 0 & a_{22} - \frac{a_{21}}{a_{11}}a_{12} & b_2 - \frac{a_{21}}{a_{11}}b_1 \end{pmatrix}" />
-</p>
+$$
+\begin{pmatrix} a_{11} & a_{12} & b_1\\ 0 & a_{22} - \frac{a_{21}}{a_{11}}a_{12} & b_2 - \frac{a_{21}}{a_{11}}b_1 \end{pmatrix}
+$$
+
 
 所以需要第二行第二个元素部位*0*，意味着
 
@@ -173,16 +174,16 @@
 * α = a + bi, β = c + di
   - α ± β = (a ± c) + (b ± d)i ∈ Q(i)
   - αβ = (ac - bd) + (ad + bc)i ∈ Q(i)
-  - β ≠ 0，则c、d不全为0，则<img src="https://latex.codecogs.com/gif.latex?\inline&space;\frac{\alpha}{\beta}&space;=&space;\frac{a&plus;bi}{c&plus;di}&space;=&space;\frac{(a&plus;bi)(c-di)}{(c&plus;di)(c-di)}=\frac{ac&plus;bd}{c^2&plus;d^2}&plus;\frac{(bc-ad)}{c^2&plus;d^2}i&space;\in&space;Q(i)" title="\frac{\alpha}{\beta} = \frac{a+bi}{c+di} = \frac{(a+bi)(c-di)}{(c+di)(c-di)}=\frac{ac+bd}{c^2+d^2}+\frac{(bc-ad)}{c^2+d^2}i \in Q(i)" />
+  - β ≠ 0，则c、d不全为0，则$ \frac{\alpha}{\beta} = \frac{a+bi}{c+di} = \frac{(a+bi)(c-di)}{(c+di)(c-di)}=\frac{ac+bd}{c^2+d^2}+\frac{(bc-ad)}{c^2+d^2}i \in Q(i) $
 
-2. 令 <img src="https://latex.codecogs.com/gif.latex?F=\{\frac{a_0&plus;a_1e&plus;\cdots&plus;a_ne^n}{b_0&plus;b_1e&plus;\cdots&plus;b_ne^n}" title="F=\{\frac{a_0+a_1e+\cdots+a_ne^n}{b_0+b_1e+\cdots+b_ne^n}" /> n、m为任意非负整数，a<sub>i</sub>，b<sub>i</sub> 数域 Z，0 ≤ i ≤ n, 0 ≤ j ≤ m。证明F是一个数域，其中e是自然对数的底。
+2. 令 $F=\{\frac{a_0+a_1e+\cdots+a_ne^n}{b_0+b_1e+\cdots+b_ne^n}$ ，n、m为任意非负整数，a<sub>i</sub>，b<sub>i</sub> 数域 Z，0 ≤ i ≤ n, 0 ≤ j ≤ m。证明F是一个数域，其中e是自然对数的底。
 
 证明思路：
 
 * 对于 0、1∈ F的思路同上题目
 * 对于F中的两个数 α、β
-  * 令<img src="https://latex.codecogs.com/gif.latex?\alpha=\frac{a_0&plus;a_1e&plus;\cdots&plus;a_{n_\alpha}e^{n_\alpha}}{b_0&plus;b_1e&plus;\cdots&plus;b_{n_\alpha}e^n_{n_\alpha}},&space;\beta=\frac{a_0&plus;a_1e&plus;\cdots&plus;a_{n_\beta}e^{n_\beta}}{b_0&plus;b_1e&plus;\cdots&plus;b_{n_\beta}e^n_{n_\beta}}" title="\alpha=\frac{a_0+a_1e+\cdots+a_{n_\alpha}e^{n_\alpha}}{b_0+b_1e+\cdots+b_{n_\alpha}e^n_{n_\alpha}}, \beta=\frac{a_0+a_1e+\cdots+a_{n_\beta}e^{n_\beta}}{b_0+b_1e+\cdots+b_{n_\beta}e^n_{n_\beta}}" />
-  * 则 <img src="https://latex.codecogs.com/gif.latex?\alpha\beta=\frac{a_0^2&plus;2a_0a_1e&plus;\cdots&plus;a_{n_\alpha}a_{n_\beta}e^{n_\alpha&plus;n_\beta}}{b_0^2&plus;2b_0b_1e&plus;\cdots&plus;b_{n_\alpha}b_{n_\beta}e^n_{n_\alpha&plus;n_\beta}}" title="\alpha\beta=\frac{a_0^2+2a_0a_1e+\cdots+a_{n_\alpha}a_{n_\beta}e^{n_\alpha+n_\beta}}{b_0^2+2b_0b_1e+\cdots+b_{n_\alpha}b_{n_\beta}e^n_{n_\alpha+n_\beta}}" />，所以 αβ ∈ F
+  * 令$\alpha=\frac{a_0+a_1e+\cdots+a_{n_\alpha}e^{n_\alpha}}{b_0+b_1e+\cdots+b_{n_\alpha}e^n_{n_\alpha}}, \beta=\frac{a_0+a_1e+\cdots+a_{n_\beta}e^{n_\beta}}{b_0+b_1e+\cdots+b_{n_\beta}e^n_{n_\beta}}$
+  * 则 $\alpha\beta=\frac{a_0^2+2a_0a_1e+\cdots+a_{n_\alpha}a_{n_\beta}e^{n_\alpha+n_\beta}}{b_0^2+2b_0b_1e+\cdots+b_{n_\alpha}b_{n_\beta}e^n_{n_\alpha+n_\beta}}$，所以 αβ ∈ F
   * 同样的思路 α ± β ∈ F，<sup>α</sup>/<sub>β</sub> ∈ F
 
 ## 第二章 行列式
@@ -194,9 +195,9 @@
 
 在 1.3节中讨论过 当 _a<sub>11</sub>a<sub>22</sub> - a<sub>21</sub>a<sub>12</sub> ≠ 0_时方程有唯一解；_a<sub>11</sub>a<sub>22</sub> - a<sub>21</sub>a<sub>12</sub> = 0_是有无穷多个解，为了方便记忆，把表达式 _a<sub>11</sub>a<sub>22</sub> - a<sub>21</sub>a<sub>12</sub>_写作：
 
-<p align="center">
-<img src="https://latex.codecogs.com/gif.latex?\left|\begin{array}{ll}{a_{11}}&space;&&space;{a_{12}}&space;\\&space;{a_{21}}&space;&&space;{a_{22}}\end{array}\right|=a_{11}a_{22}-a_{12}a_{21}" title="\left|\begin{array}{ll}{a_{11}} & {a_{12}} \\ {a_{21}} & {a_{22}}\end{array}\right|=a_{11}a_{22}-a_{12}a_{21}" />
-</p>
+$$
+\left|\begin{array}{ll}{a_{11}} & {a_{12}} \\ {a_{21}} & {a_{22}}\end{array}\right|=a_{11}a_{22}-a_{12}a_{21}
+$$
 
 这是**2阶行列式**。把系数矩阵记作_A_，那么它对应的行列式记作 _|A|_ 或 det(A)。
 
@@ -222,6 +223,57 @@ _**n_元排列**：_1, 2, ..., n_ 的一个全排列。排列个数有 _n!_ 个�
 **定理1：对换会改变数列奇偶性。**
 
 **定理2：任一n元排列与排列123...n可经过一系列对换互变，并且所做对换的次数与这个n元排列有相同的奇偶性。**
+
+### 2.2 n阶行列式的定义
+
+定义1：n阶行列式
+
+$$
+\left| 
+\begin{array}{cccc}
+{a_{11}} & {a_{12}} & {\cdots} & {a_{1n}} \\ 
+{a_{21}} & {a_{22}} & {\cdots} & {a_{2n}} \\ 
+{\vdots} & {\vdots} &  & {\vdots} \\ 
+{a_{n1}} & {a_{n2}} & {\cdots} & {a_{mn}}
+\end{array}
+\right|
+= \sum_{j_1j_2\vdots j_n}(-1)^{\tau(j_1j_2\cdots j_n)}a_{1j_1}a_{2j_2}\cdots a_{nj_n}
+$$
+
+简记作$|A|$或 $\mathbb{det} A$。
+
+**命题1**：n阶上三角形行列式的值等于它的主对角线上n个元素的乘积。
+
+### 2.3 行列式的性质
+
+> [视频12](https://www.bilibili.com/video/av39523603/?p=12)
+
+**性质1**：行列互换（矩阵转置），行列式的值不变。
+$$
+|A| = |A^T|
+$$
+
+**性质2**：行列式一行的公因子可以提出去。即为
+$$
+\left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {k a_{i 1}} & {k a_{i 2}} & {\cdots} & {k a_{i n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right|=k \left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right|
+$$
+**性质3**：行列式中若有某一行是两组数的和，则此行列式等于连个行列式的和，这两个行列式的这一行分别是第一组数和第二组数，而其余各行于原来行列式的相应各行相同，即
+$$
+\left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {b_{1} + c_1} & {b_{2}+c_2} & {\cdots} & {b_{n}+c_n} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right|=\left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {b_{1}} & {b_{2}} & {\cdots} & {b_{n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right| + \left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {c_1} & {c_2} & {\cdots} & {c_n} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right|
+$$
+**性质4**：两行互换，行列式反号，即
+$$
+\left|\begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} & & {\vdots} \\ {a_{k 1}} & {a_{k 2}} & {\cdots} & {a_{k n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{m}}\end{array}\right| = - 
+\left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{k 1}} & {a_{k 2}} & {\cdots} & {a_{k n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{m}}\end{array}\right|
+$$
+**性质5**：两行相同，行列式的值为0。即
+$$
+\left|\begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} & & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{m}}\end{array}\right| = 0
+$$
+
+**性质6**：两行成比例，行列式的值为0。
+
+**性质7**：把一行的倍数加到另一行上，行列式的值不变。（根据性质3和性质5可以证明）
 
 
 
