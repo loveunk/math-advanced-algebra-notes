@@ -14,6 +14,15 @@
 		- [1.2 线性方程组解的情况及其判别情况](#12-线性方程组解的情况及其判别情况)
 		- [1.3 数域](#13-数域)
 			- [习题1.3 思路](#习题13-思路)
+	- [第二章 行列式](#第二章-行列式)
+		- [2.1 n元排列](#21-n元排列)
+			- [习题 2.1](#习题-21)
+		- [2.2 n阶行列式的定义](#22-n阶行列式的定义)
+			- [习题2.2](#习题22)
+		- [2.3 行列式的性质](#23-行列式的性质)
+			- [习题 2.3](#习题-23)
+		- [2.4 行列式按一行（列）展开](#24-行列式按一行列展开)
+	- [参考](#参考)
 
 <!-- /TOC -->
 
@@ -214,7 +223,7 @@ _**n_元排列**：_1, 2, ..., n_ 的一个全排列。排列个数有 _n!_ 个�
 
 **逆序数**：一个 _n_ 元排列中逆序的总数称为**逆序数**，记作_**τ(a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>)**_。
 
-* 例如_τ(2431) = 2_，因为有24、31这两个逆序数对。 
+* 例如_τ(2431) = 2_，因为有24、31这两个逆序数对。
 
 **偶（奇）排列：**逆序数个数为偶（奇）数，那么这个排列称为**偶（奇）排列**。
 
@@ -236,11 +245,11 @@ _**n_元排列**：_1, 2, ..., n_ 的一个全排列。排列个数有 _n!_ 个�
 定义1：n阶行列式
 
 $$
-\left| 
+\left|
 \begin{array}{cccc}
-{a_{11}} & {a_{12}} & {\cdots} & {a_{1n}} \\ 
-{a_{21}} & {a_{22}} & {\cdots} & {a_{2n}} \\ 
-{\vdots} & {\vdots} &  & {\vdots} \\ 
+{a_{11}} & {a_{12}} & {\cdots} & {a_{1n}} \\
+{a_{21}} & {a_{22}} & {\cdots} & {a_{2n}} \\
+{\vdots} & {\vdots} &  & {\vdots} \\
 {a_{n1}} & {a_{n2}} & {\cdots} & {a_{mn}}
 \end{array}
 \right|
@@ -282,15 +291,18 @@ $$
 $$
 \left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {k a_{i 1}} & {k a_{i 2}} & {\cdots} & {k a_{i n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right|=k \left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right|
 $$
-**性质3**：行列式中若有某一行是两组数的和，则此行列式等于连个行列式的和，这两个行列式的这一行分别是第一组数和第二组数，而其余各行于原来行列式的相应各行相同，即
+
+**性质3**：行列式中若有某一行是两组数的和，则此行列式等于两个行列式的和，这两个行列式的这一行分别是第一组数和第二组数，而其余各行于原来行列式的相应各行相同，即
 $$
 \left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {b_{1} + c_1} & {b_{2}+c_2} & {\cdots} & {b_{n}+c_n} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right|=\left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {b_{1}} & {b_{2}} & {\cdots} & {b_{n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right| + \left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {c_1} & {c_2} & {\cdots} & {c_n} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{nn}}\end{array}\right|
 $$
+
 **性质4**：两行互换，行列式反号，即
 $$
-\left|\begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} & & {\vdots} \\ {a_{k 1}} & {a_{k 2}} & {\cdots} & {a_{k n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{m}}\end{array}\right| = - 
+\left|\begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} & & {\vdots} \\ {a_{k 1}} & {a_{k 2}} & {\cdots} & {a_{k n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{m}}\end{array}\right| = -
 \left| \begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{k 1}} & {a_{k 2}} & {\cdots} & {a_{k n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{m}}\end{array}\right|
 $$
+
 **性质5**：两行相同，行列式的值为0。即
 $$
 \left|\begin{array}{cccc}{a_{11}} & {a_{12}} & {\cdots} & {a_{1 n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} & & {\vdots} \\ {a_{i 1}} & {a_{i 2}} & {\cdots} & {a_{i n}} \\ {\vdots} & {\vdots} &  & {\vdots} \\ {a_{n 1}} & {a_{n 2}} & {\cdots} & {a_{m}}\end{array}\right| = 0
@@ -300,6 +312,46 @@ $$
 
 **性质7**：把一行的倍数加到另一行上，行列式的值不变。（根据性质3和性质5可以证明）
 
+上述七个行列式性质可以总结为如下的图：
 
+![2.3.Determinant-rules](img\2.3.Determinant-rules.png)
+
+#### 习题 2.3
+
+2\. (1) $(a + n-1)(a - 1)^{n-1}$，思路为把所有行加到第一行，第一行的每一个元素相同，可以提取出一个倍数$(a+n-1)$，第一行元素全为1，再把所有行减去第一行，因此仅剩右对角线上元素为$a-1$，可得
+
+2\. (2)  $\left((\sum_{i=1}^na_i)-b\right)(-b)^{(n-1)}$，同上，把所有的列加到第一列
+
+3\. (1) 所有列相加得0，所以为0
+
+3\. (2) 利用性质7，做列的加减
+
+4\. (1) $a_1 - \sum_{i=2}^{n}a_ib_i$，利用性质7做列加减，让第一列除了第一个元素外其他元素都为0
+
+4\. (2) 0，利用性质3，把第一行的每个元素拆分为2个，因此有两个行列式，发现两个行列式的除了第一行外都成比例，根据性质6，分别为0。
+
+### 2.4 行列式按一行（列）展开
+
+> [视频14](https://www.bilibili.com/video/av39523603/?p=14)
+
+定义1：n阶行列式$|A|$中，花去第$i$行和第$j$列，剩下的元素按原来次序组成的$n-1$阶行列式称为矩阵$A$的$(i, j)$的**余子式**，记作$M_{ij}$。令
+
+$$
+A_{ij} = (-1)^{i+j}M_{ij}
+$$
+
+称为$A_{ij}$是$A$的$(i, j)$的**代数余子式**。
+
+对于一个$n=3$的矩阵有，$|A| = a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}$
+
+可以推广得到
+
+$$
+|A| = \sum_{j=1}^{n} a_{ij}A_{ij}
+$$
+
+## 参考
+
+1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
 
 [回到顶部](#丘维声高等代数学习笔记)
