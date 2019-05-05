@@ -373,12 +373,25 @@ $$
 
 1\. (3)    $(\lambda^2+\lambda-10)(\lambda-1)$
 
-2\. 0 （第一列加到第二列，依次类推，第i列加到第i+1列）
+2\. $-(n-1)!\sum_{i=1}^{n}a_i$ （第一列加到第二列，依次类推，第i列加到第i+1列）
 
 7\. $x\left[\sum_{i}^{n-1}(-1)^i(x-y)^{n-1-i}(z-x){i}\right]$
 
-12\. 
-
+12\. 参考例题7的思路：
+$$
+\begin{align*}
+D_{1}&=1+x^{2} \\ 
+D_{2}&=\left(1+x^{2}\right)^{2}-x^{2}\\
+\Rightarrow D_2 - D_1 &= x^4\\
+\\
+D_{n}&=\left(1+x^{2}\right) D_{n-1}-x^{2} D_{n-2}\\
+\Rightarrow D_{n}-D_{n-1} &= x^{2}\left(D_{n-1}-D_{n-2}\right)\\
+\Rightarrow D_{n}-D_{n-1} &=x^{2(n-2)}\left(D_{2}-D_{1}\right)\\
+\Rightarrow D_{n}-D_{1}&=\sum_{i=2}^{n} x^{2 i}
+\\
+\Rightarrow D_{n}=1+\sum_{i=1}^{n} x^{2 i}
+\end{align*}
+$$
 13\. $\prod_{1 \leq j<i \leq n}\left(x_{i}-x_{j}\right)$（第k+1行减去第k行，转换为范德蒙行列式）
 
 ### 2.5 克莱姆法则
