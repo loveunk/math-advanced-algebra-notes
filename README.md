@@ -398,9 +398,9 @@ $$
 
 > [视频16](https://www.bilibili.com/video/av39523603/?p=16)
 
-**定理1**：数域K上n个方程的n元线性方程组有唯一解的充分必要条件是它的系数行列式（即系数矩阵A的行列式$|A|$）不等于0。
+**定理1**：数域$K$上$n$个方程的$n$元线性方程组有唯一解的充分必要条件是它的系数行列式（即系数矩阵$A$的行列式$|A|$）不等于0。
 
-**推论1**：数域K上n个方程的n元齐次线性方程组只有零解的充分必要条件是它的系数行列式不等于0.它有非零解的充分必要条件是它的系数行列式等于0。
+**推论1**：数域$K$上$n$个方程的$n$元齐次线性方程组只有零解的充分必要条件是它的系数行列式不等于0.它有非零解的充分必要条件是它的系数行列式等于0。
 
 #### 习题2.5
 
@@ -412,7 +412,84 @@ $$
 
 概念类似于行列式按一行（列）展开。
 
-**定义1**：n阶行列式$|A|$中任意取定k行、k列（$1\leq k <n$），位于这些行列交叉处的$k^2$个元素按原来的排法组成的k阶行列式，称为$|A|$的一个**k阶子式**（1）。划去这个k阶子式所在的行和列，剩下的元素按原来的排法组成的（n-k）阶行列式，称为余子式，在它前面乘以$(-1)^{(i_1+i_2+\cdots +i_k)+(j_1+j_2+\cdots +j_k)}$，则为子式（1）的**代数余子式**。
+**定义1**：$n$阶行列式$|A|$中任意取定$k$行、$k$列（$1\leq k <n$），位于这些行列交叉处的$k^2$个元素按原来的排法组成的k阶行列式，称为$|A|$的一个**$k$阶子式**（1）。划去这个k阶子式所在的行和列，剩下的元素按原来的排法组成的（$n-k$）阶行列式，称为余子式，在它前面乘以$(-1)^{(i_1+i_2+\cdots +i_k)+(j_1+j_2+\cdots +j_k)}$，则为子式（1）的**代数余子式**。
+
+定理1（拉普拉斯定理）：在$n$阶行列式$|A|$中，取定第$i_1, i_2, \cdots, i_k$行（$i_1<i_2<\cdots<i_k$），则这$k$行元素形成的所有$k$阶子式与它们自己的代数余子式的乘机之和等于$|A|$，即
+$$
+|A|=\sum_{1 \leqslant j_{1}<j_{2}<\cdots<j_{k} \leqslant n} A \left( \begin{array}{c}{i_{1}, i_{2}, \cdots, i_{k}} \\ {j_{1}, j_{2}, \cdots, j_{k}}\end{array}\right)(-1)^{\left(i_{1}+\cdots+i_{k}\right)+\left(j_{1}+\cdots+j_{k}\right)} A \left( \begin{array}{l}{i_{1}^{\prime}, i_{2}^{\prime}, \cdots, i_{n-k}^{\prime}} \\ {j_{1}^{\prime}, j_{2}^{\prime}, \cdots, j_{n-k}^{\prime}}\end{array}\right)
+$$
+**推论1**：下式成立：
+$$
+\left| \begin{array}{ll}{A} & {0} \\ {C} & {B}\end{array}\right|=|A||B|
+$$
+
+
+## 第三章 线性空间
+
+### 3.1 线性空间的定义
+
+令$K^n:=\{(a_1, a_2, \cdots, a_n)|a_k \in K, i=1,2,\cdots,n\}$ 是数域$K$上的一个线性空间。称作数域$K$的$n$维空间。
+
+**规定**：$(a_1, a_2, \cdots, a_n) = (b_1, b_2, \cdots, b_n)  \Longleftrightarrow a_i = b_i$
+
+* 加法：$(a_1, a_2, \cdots, a_n) + (b_1, b_2, \cdots, b_n)  := (a_1+b_1, a_2+b_2, \cdots, a_n+b_n)$
+* 数量乘法：$k(a_1, a_2, \cdots, a_n) = (ka_1, ka_2, \cdots, ka_n)$
+
+若**对应法则** $f: A \longrightarrow B$，对于每一个$a \in A$都有唯一的$b \in B$，则称$f$是$A$到$B$的一个**映射**。其中A为定义域（domain），B为培域（co-domain）。
+
+$f$的**值域**或**像**$f(A):=\{f(a) | a \in A\}$
+
+* 若$f(A)=B$，则$f$称为满射。
+* 若A中不同元素在$f$下的像不同，则称$f$是单射。
+* 若$f$既是单射，又是满射，则$f$称为一个双射（或一一对应）
+
+$S \times M:=\{(a, b) | a \in S, b \in M\}$称为$S$与$M$的**笛卡尔积**。
+
+**定义1**：非空集合$S$上一个**代数运算**时指$S\times S$到 $S$的一个映射。
+
+**定义3**：设$V$是一个非空集合，$K$是一个数域
+
+* 如果$V$上有一个运算，称为**加法**，即$(\alpha, \beta) \rightarrow \alpha + \beta$；
+* $K$与$V$之间有一个运算称为**数量乘法**，即$K\times V \rightarrow V:(k, \alpha)\rightarrow k\alpha$.
+* 且满足如下8条运算法则：
+  1. $\alpha + \beta = \beta + \alpha, \forall \alpha, \beta \in V$
+  2. $(\alpha + \beta) + \gamma = \alpha + (\beta + \gamma), \forall \alpha, \beta, \gamma \in V$
+  3. 把元素(0, 0, ..., 0)记作**0**, 它使得 $\textbf{0} + \alpha = \alpha + \textbf{0} = \alpha$
+  4. $\alpha+(-\alpha)=(-\alpha)+\alpha=0$，称$-\alpha$是$\alpha$的负元素。
+  5. $1\alpha=\alpha, \forall \alpha \in V$
+  6. $(kl)\alpha=k(l\alpha), \forall k, l \in K, \alpha \in V$
+  7. $(k+l)\alpha=k\alpha + l\alpha, \forall k, l \in K, \alpha \in V$
+  8. $k(\alpha + \beta)=k\alpha + k\beta, \forall k \in K, \alpha, \beta \in V$
+
+$\mathbb{R}^X:=\{$非空集合$X$到$\mathbb{R}$的映射$\}$，定义为$X$上的一个实值函数。
+
+规定:
+
+* $(f+g)(x):=f(x)+g(x), \forall x \in X$; 
+* $(kf)(x) := kf(x), \forall x \in X$.
+* 零函数 $0(x)=0, \forall x \in X$.
+
+运算性质：
+
+1. 设$V$是数域$K$上的一个线性空间，$V$的零元唯一。
+2. 每个$\alpha \in V$的负元唯一。
+3. $0\alpha=0, \forall \alpha \in V$ 
+4. $k0=0, \forall k \in K$
+5. 若$k \alpha=0$，则$k=0$或$\alpha=0$。
+6. $(-1)\alpha=-\alpha$
+
+### 3.2 线性子空间
+
+> 这部分内容对应下册8.2节
+
+**定义**：设$V$是数域$K$上的一个线性空间。$U$是$V$的一个非空子集。如果$U$对于$V$的加法和数量乘法也称为数域$K$上的一个线性空间，那么称$U$是$V$的一个**线性子空间**。
+
+**定理**：设$U$是域$F$上线性空间$V$的一个非空子集，则$U$是$V$的一个子空间的充分必要条件是：$U$对于$V$的加法和纯量乘法都封闭，即
+
+* $\alpha, \beta \in U \Rightarrow \alpha + \beta \in U$
+* $\alpha \in U, k \in F \Rightarrow k \alpha \in U$
+
+
 
 ## 参考
 
