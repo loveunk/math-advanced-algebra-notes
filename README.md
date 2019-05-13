@@ -489,6 +489,44 @@ $\mathbb{R}^X:=\{$非空集合$X$到$\mathbb{R}$的映射$\}$，定义为$X$上�
 * $\alpha, \beta \in U \Rightarrow \alpha + \beta \in U$
 * $\alpha \in U, k \in F \Rightarrow k \alpha \in U$
 
+在$K^n$中，给定向量组$\alpha_1, \cdots, \alpha_s$, $\beta \in K^n \Leftrightarrow$存在$K$中一组数$l_1, l_2, \cdots, l_s$，使得$\beta = l_1\alpha_1 + \cdots + l_s\alpha_s$，此时称$\beta$可以由向量组$\alpha_1, \cdots, \alpha_s$**线性表出**。
+
+数域$K$上的$n$元线性方程组
+$$
+\left\{\begin{array}{l}{a_{11} x_{1}+a_{12} x_{2}+\cdots+a_{1 n} x_{n}=b_{1}} \\ {a_{21} x_{1}+a_{22} x_{2}+\cdots+a_{2 n} x_{n}=b_{2}} \\ {\cdots} \\ {a_{s 1} x_{1}+a_{s 2} x_{2}+\cdots+a_{s n} x_{n}=b_{s}}\end{array}\right.
+$$
+可以写成$x_{1} \boldsymbol{\alpha}_{1}+x_{2} \boldsymbol{a}_{2}+\cdots+x_{n} \boldsymbol{\alpha}_{n}=\boldsymbol{\beta}$，其**有解**
+
+$\Longleftrightarrow$有$K$种一组数$c_1, c_2, \cdots, c_n$使得下式成立：
+$$
+c_{1} \boldsymbol{a}_{1}+c_{2} \boldsymbol{a}_{2}+\cdots+c_{n} \boldsymbol{a}_{n}=\boldsymbol{\beta}
+$$
+$\Longleftrightarrow \beta$可以由$\boldsymbol{\alpha}_{1}, \boldsymbol{\alpha}_{2}, \cdots, \boldsymbol{\alpha}_{n}$**线性表出**。
+
+### 3.3 线性相关与线性无关的向量组
+
+> 视频23，对应教材3.2节
+
+$\overrightarrow{c}$与$\overrightarrow{a}$**共线** $\Longleftrightarrow$ 有不全为0的实数$k_1$, $k_2$使得 $k_1\overrightarrow{c}+k_2\overrightarrow{a}=\overrightarrow{0}$；
+
+$\overrightarrow{c}$与$\overrightarrow{a}$**不共线** $\Longleftrightarrow$  $k_1\overrightarrow{c}+k_2\overrightarrow{a}=\overrightarrow{0}$ 可推出$k_1$, $k_2=0$。
+
+**定义1**：设$V$是数域$K$上的一个线性空间，$V$中的一个向量组$\alpha_1, \alpha_2, \cdots, \alpha_s (S \geq 1)$，如果有$K$中不全为0的书$k_1, \cdots, k_s$，使得
+$$
+k_{1} \boldsymbol{\alpha}_{1}+\cdots+k_{s} \boldsymbol{\alpha}_{s}=\mathbf{0}
+$$
+则称向量组$\boldsymbol{\alpha}_{1}, \cdots, \boldsymbol{\alpha}_{s}(s \geqslant 1)$**线性相关**（否则称**线性无关**）
+
+$\Longleftrightarrow$ 齐次线性方程组 $x_{1} \boldsymbol{\alpha}_{1}+\cdots+x_{s} \boldsymbol{a}_{s}=\mathbf{0}$ 有非零解。
+
+$\Longleftrightarrow$以$\alpha_1, \cdots, \alpha_n$为列向量的矩阵$A$的行列式等于0。
+
+
+
+$K^s$中，列向量方程组$\alpha_1, \cdots, \alpha_n$线性无关 
+
+$\Longleftrightarrow$ 线性方程组$x_{1} \boldsymbol{\alpha}_{1}+\cdots+x_{s} \boldsymbol{a}_{s}=\mathbf{0}$ 只有零解。
+
 
 
 ## 参考
