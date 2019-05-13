@@ -511,6 +511,19 @@ c_{1} \boldsymbol{a}_{1}+c_{2} \boldsymbol{a}_{2}+\cdots+c_{n} \boldsymbol{a}_{n
 $$
 $\Longleftrightarrow \beta$可以由$\boldsymbol{\alpha}_{1}, \boldsymbol{\alpha}_{2}, \cdots, \boldsymbol{\alpha}_{n}$**线性表出**。
 
+#### 习题8.1
+
+1\. (1) Yes (2) Yes (3) Yes (4) No (5) Yes
+2\. 
+3\. (1) Yes (2) Yes (3) Yes
+7\. 
+8\. 线性相关
+9\. （1）相关：$cos2x = 2cos^2x-1$（2）相关：$cos(3x) = 4cos^3(x) - 3cosx$ （3）无关 (4) 有关 (5) 有关 (6)有关 (7)有关
+
+#### 习题 8.2
+
+1. （1） 不是，例如 (1, ..., 1)、(-1, ..., 1)的和即不符合（2） 是
+
 ### 3.3 线性相关与线性无关的向量组
 
 > 视频23，对应教材3.2节
