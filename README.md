@@ -580,7 +580,7 @@ $\Longleftrightarrow$ 线性方程组$x_{1} \boldsymbol{\alpha}_{1}+\cdots+x_{s}
 
 **命题1**：设$\beta$可以由$\alpha_1, \cdots, \alpha_{s}$线性表出，则表出方式唯一$\Longleftrightarrow$$\alpha_1, \cdots, \alpha_{s}$线性无关。
 
-**命题2**：设$\alpha_1, \cdots, \alpha_{s}$线性无关，$\alpha_1, \cdots, \alpha_{s}, \beta$线性相关$\Longleftrightarrow$设$\beta$可以由$\alpha_1, \cdots, \alpha_{s}$线性表出，则表出方式唯一。
+**命题2**：设$\alpha_1, \cdots, \alpha_{s}$线性无关，$\alpha_1, \cdots, \alpha_{s}, \beta$线性相关$\Longleftrightarrow$设$\beta$可以由$\alpha_1, \cdots, \alpha_{s}$线性表出。
 
 #### 习题 3.2
 
@@ -589,6 +589,23 @@ $\Longleftrightarrow$ 线性方程组$x_{1} \boldsymbol{\alpha}_{1}+\cdots+x_{s}
 5\. 线性无关，行列式不为0
 9\.行列式为23
 12\. 范德蒙行列式 $\prod_{1 \leq j<i \leq n}\left(a_{i}-a_{j}\right) != 0$，所以线性无关
+
+### 3.4 极大线性无关组
+
+> 视频25第20分钟起
+
+$<\alpha_1, \cdots, \alpha_s>=\{k_1\alpha_1+\cdots+k_s\alpha_s|k_i \in K, i=1,\cdots,s\}$
+
+当$\alpha_1, \cdots, \alpha_{s}$线性相关时
+
+**定义1**：向量组$\alpha_1, \cdots, \alpha_{s}$的一个部分组称为，这个向量组的一个***极大线性无关组***，
+
+如果满足：
+
+1. 这个部分组线性无关；
+2. 从向量组的其余向量（如果有的话）中，任取一个添进来，得到的新的部分组都线性相关。
+
+
 
 ## 参考
 
