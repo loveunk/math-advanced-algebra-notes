@@ -590,7 +590,7 @@ $\Longleftrightarrow$ 线性方程组$x_{1} \boldsymbol{\alpha}_{1}+\cdots+x_{s}
 9\.行列式为23
 12\. 范德蒙行列式 $\prod_{1 \leq j<i \leq n}\left(a_{i}-a_{j}\right) != 0$，所以线性无关
 
-### 3.4 极大线性无关组和向量的秩
+### 3.4 极大线性无关组和向量组的秩
 
 > 视频25第20分钟起
 
@@ -610,6 +610,29 @@ $<\alpha_1, \cdots, \alpha_s>=\{k_1\alpha_1+\cdots+k_s\alpha_s|k_i \in K, i=1,\c
 * $rank\{\alpha_1, \cdots, \alpha_{s}\}$
 
 只含0向量的向量的秩为0。
+
+**命题3**：向量组$\alpha_1, \cdots, \alpha_{s}$*线性无关*$\Longleftrightarrow$那么$\alpha_1, \cdots, \alpha_{s}$是向量$\alpha_1, \cdots, \alpha_{s}$的一个*极大线性无关组*。$\Longleftrightarrow$$rank\{\alpha_1, \cdots, \alpha_{s}\} = s$。
+
+**命题4**：若向量组（$I$）可以由向量组（$II$）线性表出，则$rank(I) \leq rank(II)$
+
+**推论4**：等价的向量组有相等的秩。
+
+### 3.5 基
+
+设$V$是数域$K$上的线性空间。
+
+**定义1**：$V$的一个有限子集$\{\alpha_1, \cdots, \alpha_{s}\}$线性相（无）$\Longleftrightarrow$$\alpha_1, \cdots, \alpha_{s}$线性相（无）关。
+
+$V$的一个无限子集$S$线性无关$\Longleftrightarrow$$S$有一个有限子集线性无关$\Longleftrightarrow$$V$的无线子集$S$线性无关。$\Longleftrightarrow$$S$任意一个有限子集线性无关。
+
+**定义2**：设$V$是数域$K$上的线性空间，$V$的一个子集$S$如果满足下述两个条件：
+
+1. $S$是线性无关的
+2. $V$中任意一个向量可以由$S$中的向量线性表出
+
+则称$S$是$V$的一个**基**。
+
+在定义2中，如果$S=\{\alpha_1, \cdots, \alpha_{s}\}$，则向量组$\alpha_1, \cdots, \alpha_{s}$是$V$的一个有序基。
 
 ## 参考
 
