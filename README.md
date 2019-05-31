@@ -560,6 +560,28 @@ $K^s$中，列向量方程组$\alpha_1, \cdots, \alpha_n$线性无关
 
 $\Longleftrightarrow$ 线性方程组$x_{1} \boldsymbol{\alpha}_{1}+\cdots+x_{s} \boldsymbol{a}_{s}=\mathbf{0}$ 只有零解。
 
+
+
+设$V$施数域$K$上的一个线性空间：
+
+1. $\alpha$线性相关$\Longleftrightarrow$有$k \neq 0$使得$k\alpha=0$ $\Longrightarrow \alpha=0$
+
+   $\alpha$线性无关$\Longleftrightarrow \alpha \neq 0$
+
+2. 向量组$\alpha_1, \cdots, \alpha_{s}$如果有一个***部分组***线性相关，那么$\alpha_1, \cdots, \alpha_{s}$线性相关。从而，如果$\alpha_1, \cdots, \alpha_{s}$线性无关，任何一个***部分组***都线性无关。
+
+3. 凡是含有$0$的向量组，都是线性相关。
+
+4. 向量组$\alpha_1, \cdots, \alpha_{s} (s \ge 2)$线性相关$\Longleftrightarrow$其中至少有一个向量可以由其余的向量线性表出。
+
+   证明：有$K$中不全为0的数$k_1, \cdots, k_s$，使得$k_1\alpha_1+\cdots+k_s\alpha_s=0$，设$k_i \neq 0$，由(1)式得$\alpha_i=-\frac{k_1}{k_i}\alpha_1-\cdots-\frac{k_{i-1}}{k_i}\alpha_{i-1}-\frac{k_{i+1}}{k_i}\alpha_{i-1}-\cdots-\frac{k_{s}}{k_i}\alpha_{s}$
+
+5. 向量组$\alpha_1, \cdots, \alpha_{s} (s \ge 2)$线性无关$\Longleftrightarrow$每一个向量不可以由其余的向量线性表出。
+
+**命题1**：设$\beta$可以由$\alpha_1, \cdots, \alpha_{s}$线性表出，则表出方式唯一$\Longleftrightarrow$$\alpha_1, \cdots, \alpha_{s}$线性无关。
+
+**命题2**：设$\alpha_1, \cdots, \alpha_{s}$线性无关，$\alpha_1, \cdots, \alpha_{s}, \beta$线性相关$\Longleftrightarrow$设$\beta$可以由$\alpha_1, \cdots, \alpha_{s}$线性表出，则表出方式唯一。
+
 #### 习题 3.2
 
 1\. (1) No (2) No (3) Yes
