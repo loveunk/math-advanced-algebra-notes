@@ -654,6 +654,12 @@ $\{0\}$的一个基是$\phi$（空集）。
 
 **命题4**：设$\mathbb{dim} V=n$，则$V$中任意一个线性无关的向量组都可以扩充成$V$的一个基。
 
+#### 习题3.3
+
+1. $\{\alpha_1, \alpha_2\}$, $rank\{\dots\}=2$.
+2. $\{\alpha_1, \alpha_3\}$, $rank\{\dots\}=2$.
+3. (1) $det([3,-1],[4,3]) != 0$ (2) $\{\alpha_1, \alpha_2, \alpha_3, \alpha_4\}$
+
 ## 参考
 
 1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
