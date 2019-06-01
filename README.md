@@ -605,11 +605,11 @@ $<\alpha_1, \cdots, \alpha_s>=\{k_1\alpha_1+\cdots+k_s\alpha_s|k_i \in K, i=1,\c
 1. 这个部分组线性无关；
 2. 从向量组的其余向量（如果有的话）中，任取一个添进来，得到的新的部分组都线性相关。
 
-定义3：向量组$\alpha_1, \cdots, \alpha_{s}$的任意一个极大线性无关组所含向量的个数称为向量组$\alpha_1, \cdots, \alpha_{s}$的**秩**。记作：
+**定义3**：向量组$\alpha_1, \cdots, \alpha_{s}$的任意一个极大线性无关组所含向量的个数称为向量组$\alpha_1, \cdots, \alpha_{s}$的**秩**。记作：
 
 * $rank\{\alpha_1, \cdots, \alpha_{s}\}$
 
-只含0向量的向量的秩为0。
+**只含0向量的向量的秩为0。**
 
 **命题3**：向量组$\alpha_1, \cdots, \alpha_{s}$*线性无关*$\Longleftrightarrow$那么$\alpha_1, \cdots, \alpha_{s}$是向量$\alpha_1, \cdots, \alpha_{s}$的一个*极大线性无关组*。$\Longleftrightarrow$$rank\{\alpha_1, \cdots, \alpha_{s}\} = s$。
 
