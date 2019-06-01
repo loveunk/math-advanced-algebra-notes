@@ -621,7 +621,7 @@ $<\alpha_1, \cdots, \alpha_s>=\{k_1\alpha_1+\cdots+k_s\alpha_s|k_i \in K, i=1,\c
 
 设$V$是数域$K$上的线性空间。
 
-**定义1**：$V$的一个有限子集$\{\alpha_1, \cdots, \alpha_{s}\}$线性相（无）$\Longleftrightarrow$$\alpha_1, \cdots, \alpha_{s}$线性相（无）关。
+**定义1**：$V$的一个有限子集$\{\alpha_1, \cdots, \alpha_{s}\}$线性相（无）关$\Longleftrightarrow$$\alpha_1, \cdots, \alpha_{s}$线性相（无）关。
 
 $V$的一个无限子集$S$线性无关$\Longleftrightarrow$$S$有一个有限子集线性无关$\Longleftrightarrow$$V$的无线子集$S$线性无关。$\Longleftrightarrow$$S$任意一个有限子集线性无关。
 
