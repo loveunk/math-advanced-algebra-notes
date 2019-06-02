@@ -598,12 +598,31 @@ $<\alpha_1, \cdots, \alpha_s>=\{k_1\alpha_1+\cdots+k_s\alpha_s|k_i \in K, i=1,\c
 
 当$\alpha_1, \cdots, \alpha_{s}$线性相关时
 
-**定义1**：向量组$\alpha_1, \cdots, \alpha_{s}$的一个部分组称为，这个向量组的一个***极大线性无关组***，
-
-如果满足：
+**定义1**：向量组$\alpha_1, \cdots, \alpha_{s}$的一个部分组称为，这个向量组的一个***极大线性无关组***，如果满足：
 
 1. 这个部分组线性无关；
 2. 从向量组的其余向量（如果有的话）中，任取一个添进来，得到的新的部分组都线性相关。
+
+
+
+设向量组$\alpha_1, \cdots, \alpha_{s}$的一个<u>极大线性无关组</u>（不妨设）为：$\alpha_1, \cdots, \alpha_{m} (m \leq s)$。
+
+* 由于$\alpha_j=0\alpha1+\cdots+0\alpha_{j-1}+1\alpha_j+0\alpha_{j+1}+\cdots+0\alpha_s$。因此，$\alpha_1, \cdots, \alpha_{m}$中的每一个向量都可以由向量组$\alpha_1, \cdots, \alpha_{s}$线性表出。
+* 反之，$\alpha_j (1 \leq i \leq M)$，可由$\alpha_1, \cdots, \alpha_{m}$线性表出。对于$\alpha_j (M < i \leq s)$ ，根据定义，$\alpha_1, \cdots, \alpha_{m}, \alpha_j$是线性相关。因此，可由可由$\alpha_1, \cdots, \alpha_{m}$线性表出（根据上一节的命题2）。
+
+**定义2**：若向量组$\alpha_1, \cdots, \alpha_{s}$中的每一个向量都可以由向量组$\beta_1, \cdots, \beta_{r}$线性表出，则称$\alpha_1, \cdots, \alpha_{s}$可由$\beta_1, \cdots, \beta_{r}$线性表出。若向量组$\alpha_1, \cdots, \alpha_{s}$与$\beta_1, \cdots, \beta_{r}$可以**互相线性表出**，则称这两个向量组**等价**。
+
+**命题1**：向量组$\alpha_1, \cdots, \alpha_{s}$与它的任意一个极大线性无关组**等价**。
+
+向量组的等价具有性质：
+
+1. 每一个向量组与自身等价（反身性）
+2. 若$\alpha_1, \cdots, \alpha_{s} \cong \beta_1, \cdots, \beta_{r}$，那么$\beta_1, \cdots, \beta_{r} \cong \alpha_1, \cdots, \alpha_{s}$（对称性）
+3. $\alpha_1, \cdots, \alpha_{s} \cong \beta_1, \cdots, \beta_{r}$，$\gamma_1, \cdots, \gamma_{s} \cong \beta_1, \cdots, \beta_{r}$，那么$\gamma_1, \cdots, \gamma_{s} \cong \alpha_1, \cdots, \alpha_{s}$（传递性）
+
+**命题2**：向量组$\alpha_1, \cdots, \alpha_{s}$的任意两个个极大线性无关组**等价**。
+
+**引理1**：设$\beta_1, \cdots, \beta_{r}$可由$\alpha_1, \cdots, \alpha_{s}$线性表出，如果$r > s$，那么$\beta_1, \cdots, \beta_{r}$线性相关。
 
 
 
