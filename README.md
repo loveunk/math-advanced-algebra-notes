@@ -590,7 +590,7 @@ $\Longleftrightarrow$ 线性方程组$x_{1} \boldsymbol{\alpha}_{1}+\cdots+x_{s}
 9\.行列式为23
 12\. 范德蒙行列式 $\prod_{1 \leq j<i \leq n}\left(a_{i}-a_{j}\right) != 0$，所以线性无关
 
-### 3.4 极大线性无关组
+### 3.4 极大线性无关组和向量组的秩
 
 > 视频25第20分钟起
 
@@ -603,7 +603,60 @@ $<\alpha_1, \cdots, \alpha_s>=\{k_1\alpha_1+\cdots+k_s\alpha_s|k_i \in K, i=1,\c
 1. 这个部分组线性无关；
 2. 从向量组的其余向量（如果有的话）中，任取一个添进来，得到的新的部分组都线性相关。
 
+**定义3**：向量组$\alpha_1, \cdots, \alpha_{s}$的任意一个极大线性无关组所含向量的个数称为向量组$\alpha_1, \cdots, \alpha_{s}$的**秩**。记作：
 
+* $rank\{\alpha_1, \cdots, \alpha_{s}\}$
+
+**只含0向量的向量的秩为0。**
+
+**命题3**：向量组$\alpha_1, \cdots, \alpha_{s}$*线性无关*$\Longleftrightarrow$那么$\alpha_1, \cdots, \alpha_{s}$是向量$\alpha_1, \cdots, \alpha_{s}$的一个*极大线性无关组*。$\Longleftrightarrow$$rank\{\alpha_1, \cdots, \alpha_{s}\} = s$。
+
+**命题4**：若向量组（$I$）可以由向量组（$II$）线性表出，则$rank(I) \leq rank(II)$
+
+**推论4**：等价的向量组有相等的秩。
+
+### 3.5 基与维数
+
+设$V$是数域$K$上的线性空间。
+
+**定义1**：$V$的一个有限子集$\{\alpha_1, \cdots, \alpha_{s}\}$线性相（无）关$\Longleftrightarrow$$\alpha_1, \cdots, \alpha_{s}$线性相（无）关。
+
+$V$的一个无限子集$S$线性无关$\Longleftrightarrow$$S$有一个有限子集线性无关$\Longleftrightarrow$$V$的无线子集$S$线性无关。$\Longleftrightarrow$$S$任意一个有限子集线性无关。
+
+空集$\phi$定义为线性无关。
+
+**定义2**：设$V$是数域$K$上的线性空间，$V$的一个子集$S$如果满足下述两个条件：
+
+1. $S$是线性无关的
+2. $V$中任意一个向量可以由$S$中的向量线性表出
+
+则称$S$是$V$的一个**基**。
+
+在定义2中，如果$S=\{\alpha_1, \cdots, \alpha_{s}\}$，则向量组$\alpha_1, \cdots, \alpha_{s}$是$V$的一个有序基。
+
+$\{0\}$的一个基是$\phi$（空集）。
+
+**定理1**：任何一个数域上的任一个线性空间$K^n$都有一个基。
+
+**定义3**：若$V$有一个基是有限子集，则称$V$是**有限维的**。若$V$有一个基是无限子集，则称$V$是**无限维的**。
+
+**定理2**：若$V$是*有限维*的，则$V$的**任意两个基所含向量的个数相等**。
+
+**定义4**：$K^n$的非零子空间$U$的一个基所含向量的个数称为$U$的维数，记作$\mathbb{dim}_kU$。
+
+几何空间中三个不共面向量是一个基，从而集合空间是三维的。
+
+**命题2**：如果$\mathbb{dim} V=n$，则$V$中任意$n$个线性无关的向量都是$V$的一个基。
+
+**命题3**：设$\mathbb{dim} V=n$，若$V$中每一个向量可以由向量组$\alpha_1, \cdots, \alpha_{n}$线性表出，$\alpha_1, \cdots, \alpha_n$是$V$的一个基。
+
+**命题4**：设$\mathbb{dim} V=n$，则$V$中任意一个线性无关的向量组都可以扩充成$V$的一个基。
+
+#### 习题3.3
+
+1. $\{\alpha_1, \alpha_2\}$, $rank\{\dots\}=2$.
+2. $\{\alpha_1, \alpha_3\}$, $rank\{\dots\}=2$.
+3. (1) $det([3,-1],[4,3]) != 0$ (2) $\{\alpha_1, \alpha_2, \alpha_3, \alpha_4\}$
 
 设向量组$\alpha_1, \cdots, \alpha_{s}$的一个<u>极大线性无关组</u>（不妨设）为：$\alpha_1, \cdots, \alpha_{m} (m \leq s)$。
 
