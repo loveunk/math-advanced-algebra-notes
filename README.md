@@ -634,7 +634,7 @@ $V$的一个无限子集$S$线性无关$\Longleftrightarrow$$S$有一个有限�
 
 在定义2中，如果$S=\{\alpha_1, \cdots, \alpha_{s}\}$，则向量组$\alpha_1, \cdots, \alpha_{s}$是$V$的一个有序基。
 
-$\{0\}$的一个基是$\phi$（空集）。
+$\{0\}$的一个基规定为$\phi$（空集）。
 
 **定理1**：任何一个数域上的任一个线性空间$K^n$都有一个基。
 
@@ -676,6 +676,70 @@ $\{0\}$的一个基是$\phi$（空集）。
 **命题2**：向量组$\alpha_1, \cdots, \alpha_{s}$的任意两个个极大线性无关组**等价**。
 
 **引理1**：设$\beta_1, \cdots, \beta_{r}$可由$\alpha_1, \cdots, \alpha_{s}$线性表出，如果$r > s$，那么$\beta_1, \cdots, \beta_{r}$线性相关。
+
+---
+
+> [视频32](https://www.bilibili.com/video/av39523603/?p=32)
+
+**定义5**：设$V$是数域$K$上的线性空间，$V$的一个非空子集$S$如果满足两个条件：
+
+1. $S$线性无关，
+2. 对于$\beta \notin S$（若有的话），有$S \cup\{\beta\}$**线性相关**，那么$S$是$V$的一个**极大线性无关集**。
+
+当$V \notin \{0\}$，$S$是$V$的一个基 $\Longleftrightarrow$ $S$是$V$的一个极大线性无关集。
+
+**命题6**：$<\alpha_1, \dots, \alpha_s>=\{k_1\alpha_1+\dots+k_s\alpha_s|k_1,\dots,k_s \in K\}$,	则$\alpha_1, \dots, \alpha_s$的一个极大线性无关组是$<\alpha_1, \dots, \alpha_s>$的一个基，从而$dim<\alpha_1, \dots, \alpha_s> = Rank\{\alpha_1, \dots, \alpha_s\}$。
+
+---
+
+>  [视频33](https://www.bilibili.com/video/av39523603/?p=33)
+
+**命题7**：$<\alpha_1, \dots, \alpha_s>=<\beta_1, \dots, \beta_r> \Longleftrightarrow \{\alpha_1, \dots, \alpha_s\} \cong \{\beta_1, \dots, \beta_r\}$。
+
+
+
+对于一个矩阵$A$，有
+
+* 列秩等于列空间的维度，$rank\{\alpha_1, \dots, \alpha_n\} = dim<\alpha_1, \dots, \alpha_n>$；
+* 行秩等于行空间的维度，$rank\{\gamma_1, \dots, \gamma_n\}=dim<\gamma_1, \dots, \gamma_n>$。
+
+数域$K$上$S \times n$阶梯矩阵$J$，设$J$的非零行的个数为$r$，从而$J$有$r$个主元。
+
+$$J=\left(\begin{array}{cccccc}
+{0} & \cdots & {c_{1j_1}}  & \cdots & {c_{1j_2}} & {\dots} & {c_{1, j_{r}}}  & \cdots & {c_{1 n}} \\ 
+{0} & \cdots & {0}  & \cdots  & {c_{23}} & {\dots} & {c_{2,n-1}}  & \cdots & {c_{2 n}} \\ 
+{\vdots} & \cdots & {\vdots}  & \cdots & {\vdots}  & \cdots & {\vdots} & \cdots & {\vdots} \\ 
+{0} & \cdots & {0}  & \cdots & {0} & {\cdots} & {0}  & \cdots & {c_{n-1, n}} \\ 
+{0} & \cdots & {0}  & \cdots & {0} & {\cdots} & {0}  & \cdots & {0}\end{array}\right)$$
+
+列向量表示为$\alpha_1, \dots, \alpha_{j_1}, \dots, \alpha_{j_2}, \dots, \alpha_{j_r}, \dots, \alpha_{n}$；行向量表示为$\gamma_1, \gamma_2, \dots, \gamma_{r}$。
+
+对于**主元构成的列向量组**，组成的矩阵式上三角矩阵，因此这些向量组**线性无关**。
+
+它们的延伸组$\alpha_{j_1}, \alpha_{j_2}, \dots, \alpha_{j_r}$也线性无关，从而$rank\{\alpha_{j_1}, \alpha_{j_2}, \dots, \alpha_{j_r}\}=r$。
+
+
+
+考虑集合
+
+$$U=
+\begin{Bmatrix}
+\left.
+\begin{pmatrix}
+a_1\\ 
+\vdots\\ 
+a_r\\ 
+0\\ 
+\vdots\\ 
+0
+\end{pmatrix} \right| a_1, \dots, a_r \in K 
+\end{Bmatrix} \subseteq K^s$$
+
+对于其中的每个向量，可以表示为 $a_1\epsilon_1+\dots+a_r\epsilon_r$，那么$U$的一个基是$\epsilon_1, \dots, \epsilon_r$，从而$\mathbb{dim}U = r$。
+
+---
+
+> [视频34](https://www.bilibili.com/video/av39523603/?p=34)
 
 
 
