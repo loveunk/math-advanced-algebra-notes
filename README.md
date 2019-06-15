@@ -827,7 +827,13 @@ $$
 
 ### 3.9 非齐次线性方程组的解集结构
 
+数域$K$上的$n$元齐次线性方程组
+$$
+x_1\alpha_1+\dots+x_n\alpha_n=\beta \tag{1}
+$$
+的解集记作$W$。
 
+**性质1**：若$\gamma, \delta \in \boldsymbol{W}$，则$\gamma -  \delta \in W$。
 
 ## 参考
 
