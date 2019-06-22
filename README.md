@@ -34,6 +34,13 @@
 			- [习题 8.2](#习题-82)
 		- [3.3 线性相关与线性无关的向量组](#33-线性相关与线性无关的向量组)
 			- [习题 3.2](#习题-32)
+		- [3.4 极大线性无关组和向量组的秩](#34-极大线性无关组和向量组的秩)
+		- [3.5 基与维数](#35-基与维数)
+			- [习题3.3](#习题33)
+		- [3.6 矩阵的秩](#36-矩阵的秩)
+		- [3.7 线性方程组有解的判别](#37-线性方程组有解的判别)
+		- [3.8 齐次线性方程组解集的结构](#38-齐次线性方程组解集的结构)
+		- [3.9 非齐次线性方程组的解集结构](#39-非齐次线性方程组的解集结构)
 	- [参考](#参考)
 
 <!-- /TOC -->
@@ -706,10 +713,10 @@ $\{0\}$的一个基规定为$\phi$（空集）。
 数域$K$上$S \times n$阶梯矩阵$J$，设$J$的非零行的个数为$r$，从而$J$有$r$个主元。
 
 $$J=\left(\begin{array}{cccccc}
-{0} & \cdots & {c_{1j_1}}  & \cdots & {c_{1j_2}} & {\dots} & {c_{1, j_{r}}}  & \cdots & {c_{1 n}} \\ 
-{0} & \cdots & {0}  & \cdots  & {c_{23}} & {\dots} & {c_{2,n-1}}  & \cdots & {c_{2 n}} \\ 
-{\vdots} & \cdots & {\vdots}  & \cdots & {\vdots}  & \cdots & {\vdots} & \cdots & {\vdots} \\ 
-{0} & \cdots & {0}  & \cdots & {0} & {\cdots} & {0}  & \cdots & {c_{n-1, n}} \\ 
+{0} & \cdots & {c_{1j_1}}  & \cdots & {c_{1j_2}} & {\dots} & {c_{1, j_{r}}}  & \cdots & {c_{1 n}} \\
+{0} & \cdots & {0}  & \cdots  & {c_{23}} & {\dots} & {c_{2,n-1}}  & \cdots & {c_{2 n}} \\
+{\vdots} & \cdots & {\vdots}  & \cdots & {\vdots}  & \cdots & {\vdots} & \cdots & {\vdots} \\
+{0} & \cdots & {0}  & \cdots & {0} & {\cdots} & {0}  & \cdots & {c_{n-1, n}} \\
 {0} & \cdots & {0}  & \cdots & {0} & {\cdots} & {0}  & \cdots & {0}\end{array}\right)$$
 
 列向量表示为$\alpha_1, \dots, \alpha_{j_1}, \dots, \alpha_{j_2}, \dots, \alpha_{j_r}, \dots, \alpha_{n}$；行向量表示为$\gamma_1, \gamma_2, \dots, \gamma_{r}$。
@@ -726,13 +733,13 @@ $$U=
 \begin{Bmatrix}
 \left.
 \begin{pmatrix}
-a_1\\ 
-\vdots\\ 
-a_r\\ 
-0\\ 
-\vdots\\ 
+a_1\\
+\vdots\\
+a_r\\
+0\\
+\vdots\\
 0
-\end{pmatrix} \right| a_1, \dots, a_r \in K 
+\end{pmatrix} \right| a_1, \dots, a_r \in K
 \end{Bmatrix} \subseteq K^s$$
 
 对于其中的每个向量，可以表示为 $a_1\epsilon_1+\dots+a_r\epsilon_r$，那么$U$的一个基是$\epsilon_1, \dots, \epsilon_r$，从而$\mathbb{dim}U = r$。
