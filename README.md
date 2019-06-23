@@ -842,6 +842,14 @@ $$
 
 **性质1**：若$\gamma, \delta \in \boldsymbol{W}$，则$\gamma -  \delta \in W$。
 
+---
+
+> [视频40](https://www.bilibili.com/video/av39523603/?p=40)
+
+**性质2**：若$\gamma \in \boldsymbol{U}, \eta \in \boldsymbol{W}$，$\gamma=(a_1, \dots, a_n)', \eta=(c_1, \dots, c_n)'$, 则$\gamma + \eta \in \boldsymbol{U}$。
+
+
+
 ## 参考
 
 1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
