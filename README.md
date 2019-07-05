@@ -919,6 +919,12 @@ $$
 2. 和$V_1 + V_2$中零向量的表法唯一
 3. $V_1 \cap V_2 = 0$
 
+---
+
+> [视频43](https://www.bilibili.com/video/av39523603/?p=43)
+
+
+
 ## 参考
 
 1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
