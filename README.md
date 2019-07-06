@@ -1036,23 +1036,27 @@ $$
 
 **定理1**：$f: A \rightarrow B$是**可逆映射** $\Longleftrightarrow$ $f$是**双射**（单射+满射）。
 
+> 可以根据可逆映射的概念来理解，可逆且唯一
+
 ### 3.13 集合的划分，等价关系
 
 >[视频50](https://www.bilibili.com/video/av39523603/?p=50)
 
 **定义1**：如果集合$S$是它的一些非空子集的并集，其中每两个不相等的子集的交是空集（称为不相交），那么把这些子集组成的集合称为$S$的一个**划分**。
 
+> 这里举了个例子：日期以星期几作为一个划分
+
 探索集合的划分
 
 * a与b在同一个子集 $\Longleftrightarrow$ a与b模T同余，记作$a \equiv  b \quad(\text{mod } T)$。
 * a与b模T同余$\Longleftrightarrow$$(a, b) \in (H_0 \times H_0)\cup(H_1 \times H_1)\cup \cdots \cup(H_6 \times H_6)$
 
-**定义2**：设$S$是一个非空集合，$S \times S$的一个子集$W$称为$S$上的二元关系：
+**定义2**：设$S$是一个非空集合，$S \times S$的一个子集$W$称为$S$上的**二元关系**：
 
 * 若$(a, b) \in W$，则称a与b有W关系，记作$a \widetilde{w} b$，或$a \sim b$；
 * 若$(a, b) \notin W$，则称a与b没有W关系；
 
-**定义3**：$S$上的一个二元关系$\sim$如果满足：
+**定义3**：$S$上的一个二元关系$\sim$如果满足如下性质：
 
 * $a \sim a, \forall a \in S$（反射性）
 * 若$a \sim b$，则$b \sim a$（对称性）
@@ -1064,7 +1068,9 @@ $$
 
 > [视频51](https://www.bilibili.com/video/av39523603/?p=51)
 
-**定义4**：设$\sim$是S上的一个等价关系，任给$a \in S$，令$\bar{a} := \{x \in S | x \sim a\}$，则把$\bar{a}$称为$a$的**等价类**。由于$a \sim a$，因此$a \in \bar{a}$，把$a$称为$\bar{a}$的一个**代表**。
+**定义4**：设$\sim$是S上的一个等价关系，任给$a \in S$，令$\bar{a} := \{x \in S | x \sim a\}$，则把$\bar{a}$称为$a$的**等价类**。
+
+由于$a \sim a$，因此$a \in \bar{a}$，把$a$称为$\bar{a}$的一个**代表**。
 
 **性质1**：$\bar{a} = \bar{b} \Longleftrightarrow a \sim b$。 
 
