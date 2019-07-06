@@ -454,13 +454,13 @@ $$
 * 加法：$(a_1, a_2, \cdots, a_n) + (b_1, b_2, \cdots, b_n)  := (a_1+b_1, a_2+b_2, \cdots, a_n+b_n)$
 * 数量乘法：$k(a_1, a_2, \cdots, a_n) = (ka_1, ka_2, \cdots, ka_n)$
 
-若**对应法则** $f: A \longrightarrow B$，对于每一个$a \in A$都有唯一的$b \in B$，则称$f$是$A$到$B$的一个**映射**。其中A为定义域（domain），B为培域（co-domain）。
+若**对应法则** $f: A \longrightarrow B$，对于每一个$a \in A$都有唯一的$b \in B$，则称$f$是$A$到$B$的一个**映射**。其中A为**定义域**（domain），B为**培域**（co-domain）。
 
 $f$的**值域**或**像**$f(A):=\{f(a) | a \in A\}$
 
-* 若$f(A)=B$，则$f$称为满射。
-* 若A中不同元素在$f$下的像不同，则称$f$是单射。
-* 若$f$既是单射，又是满射，则$f$称为一个双射（或一一对应）
+* 若$f(A)=B$，则$f$称为**满射**。
+* 若A中不同元素在$f$下的像不同，则称$f$是**单射**。
+* 若$f$既是单射，又是满射，则$f$称为一个**双射**（或一一对应）
 
 $S \times M:=\{(a, b) | a \in S, b \in M\}$称为$S$与$M$的**笛卡尔积**。
 
@@ -961,6 +961,31 @@ $$
 1. 和$V_1 + V_2 + \cdots + V_s$是直和；
 2. $\dim (V_1 + V_2 + \cdots + V_s) = \dim V_1 + \dim V_2  + \cdots + \dim V_s$；
 3. $V_1$的一个基，$V_2$的一个基，$\cdots$，$V_s$的一个基，合起来是$V_1 + V_2 + \cdots + V_s$的一个基。
+
+---
+
+> [视频45](https://www.bilibili.com/video/av39523603/?p=45)
+
+### 3.11 线性空间的同构
+
+设$V_1$和$V'$都是数域$K$上的线性空间，如果$V$到$V'$有一个双射$\sigma$，并且满足：
+
+* **保持加法运算**：$\sigma(\alpha + \beta) = \sigma(\alpha) + \sigma(\beta)$
+* **保持加法数乘**：$\sigma(k\alpha) = k \sigma(\alpha)$
+
+那么称$\sigma$是$V$到$V'$的一个同构映射，此时称呼$V$与$V'$是同构的，记作$V \cong V'$。
+
+设$\sigma$是$V$到$V'$的一个同构映射，那么有：
+
+**性质1**：$\sigma(0) = 0'$
+
+**性质2**：$\sigma(-\alpha) = -\sigma(\alpha), \quad \forall \alpha \in V$
+
+---
+
+> [视频46](https://www.bilibili.com/video/av39523603/?p=46)
+
+
 
 
 
