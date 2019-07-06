@@ -1036,11 +1036,29 @@ $$
 
 **定理1**：$f: A \rightarrow B$是**可逆映射** $\Longleftrightarrow$ $f$是**双射**（单射+满射）。
 
-### 3.13 集合的
+### 3.13 集合的划分，等价关系
 
 >[视频50](https://www.bilibili.com/video/av39523603/?p=50)
 
+**定义1**：如果集合$S$是它的一些非空子集的并集，其中每两个不相等的子集的交是空集（称为不相交），那么把这些子集组成的集合称为$S$的一个**划分**。
 
+探索集合的划分
+
+* a与b在同一个子集 $\Longleftrightarrow$ a与b模T同余，记作$a \equiv  b \quad(\text{mod } T)$。
+* a与b模T同余$\Longleftrightarrow$$(a, b) \in (H_0 \times H_0)\cup(H_1 \times H_1)\cup \cdots \cup(H_6 \times H_6)$
+
+**定义2**：设$S$是一个非空集合，$S \times S$的一个子集$W$称为$S$上的二元关系：
+
+* 若$(a, b) \in W$，则称a与b有W关系，记作$a \widetilde{w} b$，或$a \sim b$；
+* 若$(a, b) \notin W$，则称a与b没有W关系；
+
+**定义3**：$S$上的一个二元关系$\sim$如果满足：
+
+* $a \sim a, \forall a \in S$（反射性）
+* 若$a \sim b$，则$b \sim a$（对称性）
+* 若$a \sim b$且$b \sim c$，则$a \sim c$（传递性）
+
+那么称$\sim$是S上的**等价关系**。
 
 ## 参考
 
