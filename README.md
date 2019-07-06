@@ -985,7 +985,19 @@ $$
 
 > [视频46](https://www.bilibili.com/video/av39523603/?p=46)
 
+**性质3**：对于$V$中任一向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$，$F$中任意一组元素$k_1, k_2, \cdots, k_s$，有
+$$
+\alpha(k_1\alpha_1+\cdots+k_s\alpha_s) = k_1\sigma(\alpha_1)+\cdots+k_s\sigma(\alpha_s)
+$$
+**性质4**：$V$中的向量组$\alpha_1, \alpha_2, \cdots, \alpha_s$线性相关当且仅当$\sigma(\alpha_1), \sigma(\alpha_2), \cdots, \sigma(\alpha_s)$是$V'$中线性相关的向量组。
 
+**性质5**：如果$\alpha_1, \alpha_2, \cdots, \alpha_s$是$V$的一个基，那么$\sigma(\alpha_1), \sigma(\alpha_2), \cdots, \sigma(\alpha_s)$是$V'$的一个基。
+
+**定理1**：域$F$上两个有限维线性空间**同构的充分必要条件**是它们的**维数相等**。
+
+---
+
+> [视频47](https://www.bilibili.com/video/av39523603/?p=47)
 
 
 
