@@ -1034,7 +1034,13 @@ $$
 
 > [视频49](https://www.bilibili.com/video/av39523603/?p=49)
 
-**定理1**：$f: A \rightarrow B$是可逆映射 $\Longrightarrow$ 
+**定理1**：$f: A \rightarrow B$是**可逆映射** $\Longleftrightarrow$ $f$是**双射**（单射+满射）。
+
+### 3.13 集合的
+
+>[视频50](https://www.bilibili.com/video/av39523603/?p=50)
+
+
 
 ## 参考
 
