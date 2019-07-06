@@ -1060,6 +1060,20 @@ $$
 
 那么称$\sim$是S上的**等价关系**。
 
+---
+
+> [视频51](https://www.bilibili.com/video/av39523603/?p=51)
+
+**定义4**：设$\sim$是S上的一个等价关系，任给$a \in S$，令$\bar{a} := \{x \in S | x \sim a\}$，则把$\bar{a}$称为$a$的**等价类**。由于$a \sim a$，因此$a \in \bar{a}$，把$a$称为$\bar{a}$的一个**代表**。
+
+**性质1**：$\bar{a} = \bar{b} \Longleftrightarrow a \sim b$。 
+
+**性质2**：若$\bar{a} \neq \bar{b}$，则$\bar{a} \cap \bar{b} = \phi$。
+
+**定理1**：如果集合$S$上有一个等价关系，那么所有等价类组成的集合是$S$的一个划分。
+
+> $U_{a \in S} \bar{a} := \{x \in S| \exist c \in S,  x \in \bar{c}\}$
+
 ## 参考
 
 1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
