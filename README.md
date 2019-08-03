@@ -1080,6 +1080,10 @@ $$
 
 > $U_{a \in S} \bar{a} := \{x \in S| \exist c \in S,  x \in \bar{c}\}$
 
+
+
+线性空间同构是一个等价关系。
+
 ## 参考
 
 1. [数学学习小组](https://github.com/yuerYDP/Math_learning_group)
